@@ -22,6 +22,8 @@
 	
 	    <a href="/archives/">Archives</a>
 	
+	    <a href="https://liuzhuoming.xyz/" target="_blank" rel="noopener">CV🐻</a>
+	
 	<a class="cta" href="/atom.xml" data-no-instant>Subscribe</a>
 </nav>
 
@@ -53,8 +55,8 @@
     
 
     <footer id="post-meta" class="clearfix">
-        <a href="/about/">
-        <img class="avatar" src="/images/avatar.png">
+        <a href="/">
+        <img class="avatar" src="/images/default.jpg">
         <div>
             <span class="dark">JIADAN</span>
             <span></span>
@@ -73,34 +75,6 @@
     </footer>
 
 
-  <section id="comment">
-    <button class="btn" id="loadcmts" onclick="cmts.load();">Load Comments</button>
-    <div id="gitment"></div>
-    <script src='/js/gitment.browser.js'></script>
-    <link rel="stylesheet" href=''>
-    <script>
-      var cmts={
-        load:function cmts(){
-          var gitment = new Gitment({
-          
-            id: "Hello World",
-          
-            owner: "",
-            repo: "",
-            oauth: {
-              client_id: "",
-              client_secret: "",
-            },
-          })
-          gitment.render('gitment');
-          var loadcmt = document.getElementById("loadcmts");
-          var imyourfather = loadcmt.parentNode;
-          imyourfather.removeChild(loadcmts)
-        }
-      }
-    </script>
-  </section>
-
 
 	<footer id="footer">
 	<div id="social">
@@ -111,12 +85,6 @@
 </footer>
 
 </section>
-
-	<script src="//cdnjs.loli.net/ajax/libs/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
-	<script data-no-instant>
-		
-		InstantClick.init('mousedown');
-	</script>
 
 
 
