@@ -50,18 +50,16 @@
   };
 </script>
 
-  <meta name="description" content="一般项目中使用的打包方式都是使用的maven插件的打包方式，mvn clean package ，但是 这样每次打包都会将所有的依赖jar打包进去，使得打包后的jar比较大，上传到服务器花费 的时间也比较多。">
-<meta name="keywords" content="maven,SpringBoot">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Springboot之半自动化打包">
-<meta property="og:url" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85&#x2F;index.html">
+  <meta name="description" content="好记性,不如烂笔头。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="简单">
+<meta property="og:url" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;tags&#x2F;jqprint&#x2F;index.html">
 <meta property="og:site_name" content="简单">
-<meta property="og:description" content="一般项目中使用的打包方式都是使用的maven插件的打包方式，mvn clean package ，但是 这样每次打包都会将所有的依赖jar打包进去，使得打包后的jar比较大，上传到服务器花费 的时间也比较多。">
+<meta property="og:description" content="好记性,不如烂笔头。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-02T02:21:48.181Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/">
+<link rel="canonical" href="https://jiandan06.github.io/tags/jqprint/">
 
 
 <script id="page-configurations">
@@ -69,13 +67,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Springboot之半自动化打包 | 简单</title>
+  <title>标签: jqprint | 简单</title>
   
 
 
@@ -184,115 +182,50 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/default.jpg">
-      <meta itemprop="name" content="JIANDAN">
-      <meta itemprop="description" content="好记性,不如烂笔头。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="简单">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Springboot之半自动化打包
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h1 class="collection-header">jqprint
+          <small>标签</small>
         </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-12-02 09:59:53 / 修改时间：10:21:48" itemprop="dateCreated datePublished" datetime="2019-12-02T09:59:53+08:00">2019-12-02</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      </div>
 
       
-        <pre><code>一般项目中使用的打包方式都是使用的maven插件的打包方式，mvn clean package ，但是
-这样每次打包都会将所有的依赖jar打包进去，使得打包后的jar比较大，上传到服务器花费
-的时间也比较多。</code></pre> <a id="more"></a>
-<h3 id="三种打包方式"><a href="#三种打包方式" class="headerlink" title="三种打包方式"></a>三种打包方式</h3><pre><code>    maven 有三种打包方式：
-    1、maven-assembly-plugin插件，这种方式打出来的包，会包含所有的依赖文件。
-    2、maven-jar-plugin和maven-dependency-plugin插件，这种打包方式是将依赖
-文件和项目代码分开，减小项目的体积
-    3、maven-shade-plugin插件，也是保函了所有的依赖文件。</code></pre><h3 id="第二种打包方式"><a href="#第二种打包方式" class="headerlink" title="第二种打包方式"></a>第二种打包方式</h3><pre><code>    主要是记录第二种打包方式，经过大佬的指点，通过这种方式减小jar的体积，这样
-上传服务器的jar再也不会很慢了。
-
-
-    还在测试ing</code></pre>
+    <div class="collection-year">
+      <h1 class="collection-header">2020</h1>
     </div>
 
-    
-    
-    
-        
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>JIANDAN
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/" title="Springboot之半自动化打包">https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-01-07T15:05:46+08:00"
+              content="2020-01-07">
+          01-07
+        </time>
+      </div>
 
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/" itemprop="url">
+            <span itemprop="name">页面插件打印</span>
+          </a>
+      </h2>
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/maven/" rel="tag"># maven</a>
-              <a href="/tags/SpringBoot/" rel="tag"># SpringBoot</a>
-          </div>
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/14/md%E8%AF%AD%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="md语法的使用">
-                  <i class="fa fa-chevron-left"></i> md语法的使用
-                </a>
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-                <a href="/2019/12/27/NIO%E3%80%81BIO%E3%80%81AIO/" rel="prev" title="NIO、BIO、AIO">
-                  NIO、BIO、AIO <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-          </div>
-      </footer>
-    
+    </header>
   </article>
+
+    </div>
+  </div>
   
   
   
 
-  </div>
+  
+
 
 
           </div>
@@ -321,7 +254,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#三种打包方式"><span class="nav-number">1.</span> <span class="nav-text">三种打包方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二种打包方式"><span class="nav-number">2.</span> <span class="nav-text">第二种打包方式</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

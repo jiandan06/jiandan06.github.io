@@ -50,18 +50,23 @@
   };
 </script>
 
-  <meta name="description" content="一般项目中使用的打包方式都是使用的maven插件的打包方式，mvn clean package ，但是 这样每次打包都会将所有的依赖jar打包进去，使得打包后的jar比较大，上传到服务器花费 的时间也比较多。">
-<meta name="keywords" content="maven,SpringBoot">
+  <meta name="description" content="项目有一个需求就是要页面打印，本来使用window.print()也能够打印，但是客户 需要详情页面也要打印，详情页面是和修改页面共用的，查看时就将所有的input输入框 禁用，这个时候再次使用print()去打印的时候就会出现只有表格没有具体内容的问题。">
+<meta name="keywords" content="js,jqprint">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Springboot之半自动化打包">
-<meta property="og:url" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85&#x2F;index.html">
+<meta property="og:title" content="页面插件打印">
+<meta property="og:url" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2020&#x2F;01&#x2F;07&#x2F;%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0&#x2F;index.html">
 <meta property="og:site_name" content="简单">
-<meta property="og:description" content="一般项目中使用的打包方式都是使用的maven插件的打包方式，mvn clean package ，但是 这样每次打包都会将所有的依赖jar打包进去，使得打包后的jar比较大，上传到服务器花费 的时间也比较多。">
+<meta property="og:description" content="项目有一个需求就是要页面打印，本来使用window.print()也能够打印，但是客户 需要详情页面也要打印，详情页面是和修改页面共用的，查看时就将所有的input输入框 禁用，这个时候再次使用print()去打印的时候就会出现只有表格没有具体内容的问题。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-02T02:21:48.181Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2020&#x2F;01&#x2F;07&#x2F;%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0&#x2F;1.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2020&#x2F;01&#x2F;07&#x2F;%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0&#x2F;2.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2020&#x2F;01&#x2F;07&#x2F;%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0&#x2F;3.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2020&#x2F;01&#x2F;07&#x2F;%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0&#x2F;4.png">
+<meta property="og:updated_time" content="2020-01-07T07:27:43.277Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;jiandan06.github.io&#x2F;2020&#x2F;01&#x2F;07&#x2F;%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0&#x2F;1.png">
 
-<link rel="canonical" href="https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/">
+<link rel="canonical" href="https://jiandan06.github.io/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/">
 
 
 <script id="page-configurations">
@@ -75,7 +80,7 @@
   };
 </script>
 
-  <title>Springboot之半自动化打包 | 简单</title>
+  <title>页面插件打印 | 简单</title>
   
 
 
@@ -189,7 +194,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/">
+    <link itemprop="mainEntityOfPage" href="https://jiandan06.github.io/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/default.jpg">
@@ -202,7 +207,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Springboot之半自动化打包
+          页面插件打印
         </h1>
 
         <div class="post-meta">
@@ -213,7 +218,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-12-02 09:59:53 / 修改时间：10:21:48" itemprop="dateCreated datePublished" datetime="2019-12-02T09:59:53+08:00">2019-12-02</time>
+              <time title="创建时间：2020-01-07 15:05:46 / 修改时间：15:27:43" itemprop="dateCreated datePublished" datetime="2020-01-07T15:05:46+08:00">2020-01-07</time>
             </span>
 
           
@@ -227,18 +232,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <pre><code>一般项目中使用的打包方式都是使用的maven插件的打包方式，mvn clean package ，但是
-这样每次打包都会将所有的依赖jar打包进去，使得打包后的jar比较大，上传到服务器花费
-的时间也比较多。</code></pre> <a id="more"></a>
-<h3 id="三种打包方式"><a href="#三种打包方式" class="headerlink" title="三种打包方式"></a>三种打包方式</h3><pre><code>    maven 有三种打包方式：
-    1、maven-assembly-plugin插件，这种方式打出来的包，会包含所有的依赖文件。
-    2、maven-jar-plugin和maven-dependency-plugin插件，这种打包方式是将依赖
-文件和项目代码分开，减小项目的体积
-    3、maven-shade-plugin插件，也是保函了所有的依赖文件。</code></pre><h3 id="第二种打包方式"><a href="#第二种打包方式" class="headerlink" title="第二种打包方式"></a>第二种打包方式</h3><pre><code>    主要是记录第二种打包方式，经过大佬的指点，通过这种方式减小jar的体积，这样
-上传服务器的jar再也不会很慢了。
+        <pre><code>    项目有一个需求就是要页面打印，本来使用window.print()也能够打印，但是客户
+需要详情页面也要打印，详情页面是和修改页面共用的，查看时就将所有的input输入框
+禁用，这个时候再次使用print()去打印的时候就会出现只有表格没有具体内容的问题。</code></pre> <a id="more"></a>
+<h3 id="window-print"><a href="#window-print" class="headerlink" title="window.print();"></a>window.print();</h3><pre><code>具体的这个使用原理我就不多讲，都是调用浏览器原本的打印功能。</code></pre><p><img src="/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/1.png" alt="图片1"><br><img src="/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/2.png" alt="图片2"><br>    需要打印的代码就写在中间就好了，这样打印会改变原本的格式，所以打印完后可以重新<br>    加载这个页面</p>
+<h3 id="jqprint插件"><a href="#jqprint插件" class="headerlink" title="jqprint插件"></a>jqprint插件</h3><pre><code>这是一个打印插件，百度这个名字就能找到了，使用方法也很简单。</code></pre><p><img src="/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/3.png" alt="图片3"><br>    首先引入这个文件，这个文件记得一定放在jquery的下面，不然会出现加载问题，这个问题<br>    搞了我一上午<br><img src="/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/4.png" alt="图片4"><br>    加载js文件后，直接调用这个方法就行了，这个打印调用的方法我就不过多解释了。</p>
 
-
-    还在测试ing</code></pre>
     </div>
 
     
@@ -253,7 +252,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/" title="Springboot之半自动化打包">https://jiandan06.github.io/2019/12/02/Springboot%E4%B9%8B%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85/</a>
+    <a href="https://jiandan06.github.io/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/" title="页面插件打印">https://jiandan06.github.io/2020/01/07/%E9%A1%B5%E9%9D%A2%E6%8F%92%E4%BB%B6%E6%89%93%E5%8D%B0/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -264,25 +263,22 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/maven/" rel="tag"># maven</a>
-              <a href="/tags/SpringBoot/" rel="tag"># SpringBoot</a>
+              <a href="/tags/js/" rel="tag"># js</a>
+              <a href="/tags/jqprint/" rel="tag"># jqprint</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/14/md%E8%AF%AD%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="md语法的使用">
-                  <i class="fa fa-chevron-left"></i> md语法的使用
+                <a href="/2019/12/27/NIO%E3%80%81BIO%E3%80%81AIO/" rel="next" title="NIO、BIO、AIO">
+                  <i class="fa fa-chevron-left"></i> NIO、BIO、AIO
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/12/27/NIO%E3%80%81BIO%E3%80%81AIO/" rel="prev" title="NIO、BIO、AIO">
-                  NIO、BIO、AIO <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -321,7 +317,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#三种打包方式"><span class="nav-number">1.</span> <span class="nav-text">三种打包方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二种打包方式"><span class="nav-number">2.</span> <span class="nav-text">第二种打包方式</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#window-print"><span class="nav-number">1.</span> <span class="nav-text">window.print();</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jqprint插件"><span class="nav-number">2.</span> <span class="nav-text">jqprint插件</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
